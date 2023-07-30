@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <span class="brand-text font-weight-light">Buku Kita</span>
+      <span class="brand-text font-weight-light">Pembelian - Penjualan</span>
     </a>
 
     <!-- Sidebar -->
@@ -10,7 +10,7 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-          <a href="#" class="d-block">@herziwp</a>
+          <a href="#" class="d-block">Group 5</a>
         </div>
       </div>
 
@@ -57,6 +57,14 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Pembelian
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url; ?>/penjualan" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Penjualan
               </p>
             </a>
           </li>

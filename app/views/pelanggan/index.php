@@ -24,7 +24,7 @@
 
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title"><?= $data['title'] ?></h3> <div class="btn-group float-right"><a href="<?= base_url; ?>/pelanggan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Pelanggan</a><a href="<?= base_url; ?>/pelanggan/laporan" class="btn float-right btn-xs btn btn-info">Laporan Pelanggan</a><a href="<?= base_url; ?>/pelanggan/lihatlaporan" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Pelanggan</a></div>
+          <h3 class="card-title"><?= $data['title'] ?></h3> <div class="btn-group float-right"><a href="<?= base_url; ?>/pelanggan/tambah" class="btn float-right btn-xs btn btn-primary">Tambah Pelanggan</a><a href="<?= base_url; ?>/pelanggan/lihatlaporan" class="btn float-right btn-xs btn btn-warning">Lihat Laporan Pelanggan</a></div>
         </div>
         <div class="card-body">
         

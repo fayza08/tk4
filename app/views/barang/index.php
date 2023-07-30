@@ -49,6 +49,7 @@
                       <th>Nama Barang</th>
                       <th>Keterangan</th>
                       <th>Satuan</th>
+                      <th>Stok</th>
                       <th>Status</th>
                       <th style="width: 150px">Action</th>
                     </tr>
@@ -61,6 +62,7 @@
                       <td><?= $row['NamaBarang'];?></td>
                       <td><?= $row['Keterangan'];?></td>
                       <td><?= $row['Satuan'];?></td>
+                      <td><?= $row['stok'];?></td>
                       <td><?= $row['status'];?></td>
                       <td>
                         <a href="<?= base_url; ?>/barang/edit/<?= $row['idbarang'] ?>" class="badge badge-info ">Edit</a> <a href="<?= base_url; ?>/barang/hapus/<?= $row['idbarang'] ?>" class="badge badge-danger" onclick="return confirm('Hapus data?');">Hapus</a>
