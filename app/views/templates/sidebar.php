@@ -53,6 +53,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="<?= base_url; ?>/pembelian" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Pembelian
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="<?= base_url; ?>/user" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
