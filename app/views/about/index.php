@@ -28,13 +28,13 @@
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <a class="float-right"> Fayza Nurrahmi - 2602278460 </a>
+                    <a class="float-right"> FAYZA NURRAHMI - 2602278460 </a>
                   </li>
                   <li class="list-group-item">
-                    <a class="float-right"> Nama - Nim </a>
+                    <a class="float-right">DIONISIUS MASETIA RAHARJA - 2602257891  </a>
                   </li>
                   <li class="list-group-item">
-                    <a class="float-right"> Nama - Nim </a>
+                    <a class="float-right"> TAUFIQ SURYONO - 2602307044 </a>
                   </li>
                   <li class="list-group-item">
                     <a class="float-right"> Nama - Nim </a>
