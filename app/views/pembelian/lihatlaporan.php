@@ -70,21 +70,21 @@
                   <thead>                  
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>Nama Pelanggan</th>
-                      <th>No Telp</th>
-                      <th>Alamat</th>
-                      <th>Status</th>
+                      <th>Jumlah Pembelian</th>
+                      <th>Harga Beli</th>
+                      <th>Barang</th>
+                      <th>Supplier</th>
                     </tr>
                   </thead>
                   <tbody>
                   <?php $no=1; ?> 
-                    <?php foreach ($data['pelanggan'] as $row) :?>
+                    <?php foreach ($data['buku'] as $row) :?>
                     <tr>
                       <td><?= $no; ?></td>
-                      <td><?= $row['namaPelanggan'];?></td>
-                      <td><?= $row['telpPelanggan'];?></td>
-                      <td><?= $row['alamat'];?></td>
-                      <td><?= $row['status'];?></td>
+                      <td><?= $row['JumlahPembelian'];?></td>
+                      <td><?= $row['HargaBeli'];?></td>
+                      <td><?= $row['namaBarang'];?></td>
+                      <td><?= $row['namaSupplier'];?></td>
                     </tr>
                     <?php $no++; endforeach; ?>
                   </tbody>
