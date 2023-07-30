@@ -33,6 +33,13 @@ class PembelianModel {
 		$this->db->bind('barang', $data['barang']);
 		$this->db->execute();
 
+		
+		$query = "UPDATE barang SET stok=stok+:stok WHERE idbarang=:id";
+		$this->db->query($query);
+		$this->db->bind('id',$data['barang']);
+		$this->db->bind('stok',$data['jumlah']);
+		$this->db->execute();
+
 		return $this->db->rowCount();
 	}
 

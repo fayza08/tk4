@@ -11,7 +11,7 @@ class About extends Controller {
 	} 
 	public function index()
 	{
-		$data['title'] = 'Halaman AboutMe';
+		$data['title'] = 'Halaman About US';
 
 		$this->view('templates/header', $data);
 		$this->view('templates/sidebar', $data);
