@@ -19,9 +19,38 @@
         <div class="card-header">
           <h3 class="card-title">Hello</h3>
         </div>
-        <div class="card-body">
-          Selamat datang dihalaman buku kita!
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-counter primary">
+              <i class="fa fa-code-fork"></i>
+
+              <?php foreach ($data['penjualan'] as $row) :?>
+                <span class="count-numbers"><?= $penjualan = $row['total_penjualan']?></span>                      
+              <?php  endforeach; ?>
+
+              <span class="count-name">Pemasukkan</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card-counter danger">
+              <i class="fa fa-ticket"></i>
+                <?php foreach ($data['pembelian'] as $row) :?>
+                  <span class="count-numbers"><?= $pembelian = $row['total_pembelian']?></span>                      
+                <?php  endforeach; ?>
+              <span class="count-name">Pengeluaran</span>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card-counter success">
+              <i class="fa fa-database"></i>
+              <span class="count-numbers"><?= $penjualan - $pembelian?></span>
+              <span class="count-name">Laba/Rugi</span>
+            </div>
+          </div>
         </div>
+      </div>
         <!-- /.card-body -->
         <div class="card-footer">
           Footer

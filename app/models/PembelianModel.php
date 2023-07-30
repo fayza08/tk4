@@ -16,6 +16,12 @@ class PembelianModel {
 		return $this->db->resultSet();
 	}
 
+	public function getTotalPembelian()
+	{
+		$this->db->query("SELECT sum(pb.JumlahPembelian * pb.HargaBeli) as total_pembelian from pembelian pb;");
+		return $this->db->resultSet();
+	}
+
 	// public function getPembelianById($id)
 	// {
 	// 	$this->db->query('SELECT * FROM ' . $this->table . ' WHERE IdPembelian=:id');
