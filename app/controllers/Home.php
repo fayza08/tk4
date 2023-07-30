@@ -12,7 +12,9 @@ class Home extends Controller {
 	public function index()
 	{
 		$data['title'] = 'Halaman Home';
-
+		$data['penjualan'] = $this->model('PenjualanModel')->getTotalPenjualan();
+		$data['pembelian'] = $this->model('PembelianModel')->getTotalPembelian();
+		
 		$this->view('templates/header', $data);
 		$this->view('templates/sidebar', $data);
 		$this->view('home/index', $data);

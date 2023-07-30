@@ -16,6 +16,12 @@ class PenjualanModel {
 		return $this->db->resultSet();
 	}
 
+	public function getTotalPenjualan()
+	{
+		$this->db->query("SELECT sum(pj.JumlahPenjualan * pj.HargaJual) as total_penjualan from penjualan pj");
+		return $this->db->resultSet();
+	}
+
 	// public function getPenjualanById($id)
 	// {
 	// 	$this->db->query('SELECT * FROM ' . $this->table . ' WHERE IdPenjualan=:id');
